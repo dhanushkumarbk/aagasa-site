@@ -2,11 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AAGASA | Private Nature Stay Near Nandi Hills</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AAGASA is a private luxury nature stay near Nandi Hills offering entire property bookings and serene forest surroundings.">
+  <title>AAGASA – Private Luxury Nature Stay near Nandi Hills</title>
 
+  <!-- Core SEO -->
+  <meta name="description" content="AAGASA is a private luxury nature stay near Nandi Hills, Chikkaballapur. Entire property booking for families and private groups seeking calm, privacy, and nature.">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics (replace G-XXXXXXX later) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
 
   <style>
     body {
@@ -26,18 +39,20 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      color: white;
+      color: #fff;
+      padding: 0 20px;
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 56px;
-      letter-spacing: 2px;
+      font-size: 52px;
+      letter-spacing: 1.5px;
+      margin-bottom: 16px;
     }
 
     header p {
-      max-width: 700px;
-      margin: 20px auto 40px;
+      max-width: 720px;
+      margin: 0 auto 36px;
       font-size: 20px;
       color: #e5e5e5;
     }
@@ -49,6 +64,7 @@
       text-decoration: none;
       border-radius: 30px;
       font-weight: 500;
+      display: inline-block;
     }
 
     section {
@@ -65,7 +81,7 @@
 
     .muted {
       color: #6b7280;
-      max-width: 750px;
+      max-width: 760px;
     }
 
     .offer {
@@ -74,6 +90,7 @@
       padding: 40px;
       border-radius: 14px;
       max-width: 650px;
+      margin-bottom: 40px;
     }
 
     .offer strong {
@@ -90,7 +107,7 @@
     }
 
     .card {
-      background: white;
+      background: #fff;
       border-radius: 14px;
       overflow: hidden;
       box-shadow: 0 10px 25px rgba(0,0,0,0.05);
@@ -111,6 +128,24 @@
       color: #cbd5f5;
       text-align: center;
       padding: 60px 20px;
+      font-size: 14px;
+    }
+
+    /* Sticky WhatsApp CTA */
+    @media (max-width: 768px) {
+      .wa-float {
+        position: fixed;
+        bottom: 18px;
+        right: 18px;
+        background: #25D366;
+        color: #fff;
+        padding: 14px 22px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 500;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        z-index: 9999;
+      }
     }
   </style>
 </head>
@@ -119,50 +154,53 @@
 
 <header>
   <div>
-    <h1>AAGASA</h1>
+    <h1>AAGASA – Private Nature Stay near Nandi Hills</h1>
     <p>
-      A private luxury nature stay near Nandi Hills — designed for calm,
-      privacy, and refined simplicity.
+      A private luxury retreat near Nandi Hills, Chikkaballapur — offered as an exclusive
+      full-property stay for families and private groups seeking calm, privacy, and nature.
     </p>
-    <a class="btn" href="https://wa.me/919008964945">Enquire on WhatsApp</a>
+    <a class="btn" href="https://wa.me/919008964945?text=Hi%20I%20want%20to%20check%20availability%20at%20AAGASA%20near%20Nandi%20Hills">
+      Enquire on WhatsApp
+    </a>
   </div>
 </header>
 
 <section>
-  <h2>Weekday Retreat Offer</h2>
+  <h2>Pricing</h2>
+
   <div class="offer">
     <strong>₹15,000 per night</strong><br><br>
     Entire property · Up to 10 guests<br>
-    Available Monday – Thursday
-  </div>
-  <h2>Weekend </h2>
-  <div class="offer">
-    <strong>Contact us directly for pricing -9008964945</strong><br><br>
-    Entire property · Up to 10 guests<br>
-    Available Friday – Sunday
+    Weekdays · Monday – Thursday
   </div>
 
+  <div class="offer">
+    <strong>₹18,000 – ₹25,000 per night</strong><br><br>
+    Entire property · Up to 10 guests<br>
+    Weekends · Friday – Sunday (demand-based pricing)
+  </div>
 </section>
 
 <section>
   <h2>The Stay</h2>
   <p class="muted">
-    AAGASA is offered as an exclusive, full-property stay.
-    We host only one group at a time to preserve privacy and tranquility.
+    AAGASA is hosted as an exclusive private property — we accommodate only one group at a time.
+    No shared spaces, no disturbances, and no party crowds. Ideal for families, close friends,
+    and guests who value privacy and tranquility near Nandi Hills.
   </p>
 
   <div class="grid">
     <div class="card">
-      <img src="images/room1.jpg">
-      <div>Elegant private rooms for relaxed stays</div>
+      <img src="images/room1.jpg" loading="lazy" alt="Private rooms at AAGASA">
+      <div>Comfortable private rooms designed for relaxed stays</div>
     </div>
     <div class="card">
-      <img src="images/lawn.jpg">
-      <div>Open lawn surrounded by nature</div>
+      <img src="images/lawn.jpg" loading="lazy" alt="Open lawn at AAGASA">
+      <div>Spacious open lawn surrounded by greenery</div>
     </div>
     <div class="card">
-      <img src="images/bonfire.jpg">
-      <div>Evening bonfires under open skies</div>
+      <img src="images/bonfire.jpg" loading="lazy" alt="Bonfire evenings at AAGASA">
+      <div>Bonfire evenings under open skies</div>
     </div>
   </div>
 </section>
@@ -170,38 +208,44 @@
 <section>
   <h2>Gallery</h2>
   <div class="grid">
-    <div class="card"><img src="images/gallery1.jpg"></div>
-    <div class="card"><img src="images/gallery2.jpg"></div>
-    <div class="card"><img src="images/gallery3.jpg"></div>
+    <div class="card"><img src="images/gallery1.jpg" loading="lazy" alt="AAGASA property view"></div>
+    <div class="card"><img src="images/gallery2.jpg" loading="lazy" alt="Nature surroundings at AAGASA"></div>
+    <div class="card"><img src="images/gallery3.jpg" loading="lazy" alt="Outdoor spaces at AAGASA"></div>
   </div>
 </section>
 
 <section>
   <h2>Location</h2>
-
   <p class="muted">
     Doddballapura Road, beside Forest Nursery,<br>
     Sultanpete, Nandi, Chikkaballapur – 562103
   </p>
 
-  <a 
-    href="https://maps.app.goo.gl/GurvxZ2QF6FNCfJ37"
-    target="_blank"
-    class="map-link"
-  >
-    📍 View on Google Maps
+  <a class="btn" target="_blank"
+     href="https://maps.app.goo.gl/GurvxZ2QF6FNCfJ37">
+    View on Google Maps
   </a>
 </section>
 
 <section>
   <h2>Reservations</h2>
-  <p class="muted">For availability and bookings, contact us directly.</p>
-  <a class="btn" href="https://wa.me/919008964945">WhatsApp 9008964945</a>
+  <p class="muted">
+    For availability, dates, and booking confirmation, contact us directly on WhatsApp.
+  </p>
+  <a class="btn"
+     href="https://wa.me/919008964945?text=Hi%20I%20want%20to%20check%20availability%20at%20AAGASA">
+    WhatsApp 9008964945
+  </a>
 </section>
 
 <footer>
-  © AAGASA · Private Nature Stay near Nandi Hills
+  © AAGASA · Private Luxury Nature Stay near Nandi Hills, Chikkaballapur
 </footer>
+
+<a class="wa-float"
+   href="https://wa.me/919008964945?text=Hi%20I%20want%20to%20check%20availability%20at%20AAGASA">
+  WhatsApp Us
+</a>
 
 </body>
 </html>
