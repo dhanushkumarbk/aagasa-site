@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> AAGASA </title>
+  <title>AAGASA</title>
 
-  <!-- Core SEO -->
+  <!-- SEO -->
   <meta name="description" content="AAGASA is a private luxury nature stay near Nandi Hills, Chikkaballapur. Entire property booking for families and private groups seeking calm, privacy, and nature.">
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,26 +12,18 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- Google Analytics (replace G-XXXXXXX later) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-  </script>
-
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       color: #1c1c1c;
       background: #fafafa;
-      line-height: 1.7;
+      line-height: 1.65;
     }
 
+    /* ---------- HERO ---------- */
     header {
-      height: 90vh;
+      height: 88vh;
       background:
         linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
         url("images/hero.jpg") center/cover no-repeat;
@@ -40,25 +32,25 @@
       justify-content: center;
       text-align: center;
       color: #fff;
-      padding: 0 20px;
+      padding: 0 24px;
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 52px;
-      letter-spacing: 1.5px;
-      margin-bottom: 16px;
+      font-size: 60px;
+      letter-spacing: 3px;
+      margin-bottom: 14px;
     }
 
     header p {
-      max-width: 720px;
-      margin: 0 auto 36px;
-      font-size: 20px;
+      max-width: 680px;
+      margin: 0 auto 34px;
+      font-size: 19px;
       color: #e5e5e5;
     }
 
     .btn {
-      padding: 14px 36px;
+      padding: 13px 34px;
       background: #bfa77a;
       color: #111;
       text-decoration: none;
@@ -67,50 +59,58 @@
       display: inline-block;
     }
 
+    /* ---------- SECTIONS ---------- */
     section {
       max-width: 1100px;
       margin: auto;
-      padding: 90px 24px;
+      padding: 70px 24px;
+    }
+
+    section + section {
+      padding-top: 40px;
     }
 
     h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 36px;
-      margin-bottom: 20px;
+      font-size: 34px;
+      margin-bottom: 14px;
     }
 
     .muted {
       color: #6b7280;
-      max-width: 760px;
+      max-width: 740px;
+      font-size: 16px;
     }
 
+    /* ---------- PRICING ---------- */
     .offer {
       background: #111827;
       color: #f9fafb;
-      padding: 40px;
+      padding: 34px;
       border-radius: 14px;
       max-width: 650px;
-      margin-bottom: 40px;
+      margin-bottom: 26px;
     }
 
     .offer strong {
-      font-size: 30px;
+      font-size: 28px;
       color: #e7d3a1;
       font-family: 'Playfair Display', serif;
     }
 
+    /* ---------- GRID ---------- */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
+      gap: 28px;
+      margin-top: 34px;
     }
 
     .card {
       background: #fff;
       border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.06);
     }
 
     .card img {
@@ -120,31 +120,73 @@
     }
 
     .card div {
-      padding: 24px;
+      padding: 20px 22px;
+      font-size: 15px;
+      line-height: 1.55;
     }
 
+    .card strong {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    /* ---------- FOOTER ---------- */
     footer {
-      background: #0f172a;
+      background: linear-gradient(180deg, #0f172a 0%, #0b1220 100%);
       color: #cbd5f5;
+      padding: 56px 20px;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: auto;
       text-align: center;
-      padding: 60px 20px;
+    }
+
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      letter-spacing: 4px;
+      margin-bottom: 16px;
+    }
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
       font-size: 14px;
     }
 
-    /* Sticky WhatsApp CTA */
+    .insta-icon {
+      display: inline-flex;
+      transition: transform 0.2s ease;
+    }
+
+    .insta-icon:hover {
+      transform: scale(1.08);
+    }
+
+    .footer-copy {
+      font-size: 13px;
+      opacity: 0.75;
+    }
+
+    /* ---------- MOBILE ---------- */
     @media (max-width: 768px) {
-      .wa-float {
-        position: fixed;
-        bottom: 18px;
-        right: 18px;
-        background: #25D366;
-        color: #fff;
-        padding: 14px 22px;
-        border-radius: 50px;
-        text-decoration: none;
-        font-weight: 500;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-        z-index: 9999;
+      header h1 {
+        font-size: 44px;
+        letter-spacing: 2px;
+      }
+
+      header p {
+        font-size: 17px;
+      }
+
+      section {
+        padding: 56px 20px;
       }
     }
   </style>
@@ -159,8 +201,9 @@
       A private luxury retreat near Nandi Hills, Chikkaballapur — offered as an exclusive
       full-property stay for families and private groups seeking calm, privacy, and nature.
     </p>
-    <a class="btn" href="https://wa.me/919008964945?text=Hi%20I%20want%20to%20check%20availability%20at%20AAGASA%20near%20Nandi%20Hills">
-      Enquire on WhatsApp
+    <a class="btn"
+       href="https://wa.me/919008964945?text=Hi%20I%20want%20to%20check%20availability%20at%20AAGASA">
+      Check Availability on WhatsApp
     </a>
   </div>
 </header>
@@ -175,9 +218,9 @@
   </div>
 
   <div class="offer">
-    <strong>Contact us directly for pricing</strong><br><br>
+    <strong>Weekend pricing on request</strong><br><br>
     Entire property · Up to 10 guests<br>
-    Weekends · Friday – Sunday 
+    Friday – Sunday
   </div>
 </section>
 
@@ -185,21 +228,20 @@
   <h2>The Stay</h2>
   <p class="muted">
     AAGASA is hosted as an exclusive private property — we accommodate only one group at a time.
-    No shared spaces, no disturbances, and no party crowds. Ideal for families, close friends,
-    and guests who value privacy and tranquility near Nandi Hills.
+    No shared spaces, no disturbances, and no party crowds.
   </p>
 
   <div class="grid">
     <div class="card">
-      <img src="images/room1.jpg" loading="lazy" alt="Private rooms at AAGASA">
+      <img src="images/room1.jpg" loading="lazy" alt="Private rooms">
       <div>Comfortable private rooms designed for relaxed stays</div>
     </div>
     <div class="card">
-      <img src="images/lawn.jpg" loading="lazy" alt="Open lawn at AAGASA">
+      <img src="images/lawn.jpg" loading="lazy" alt="Open lawn">
       <div>Spacious open lawn surrounded by greenery</div>
     </div>
     <div class="card">
-      <img src="images/bonfire.jpg" loading="lazy" alt="Bonfire evenings at AAGASA">
+      <img src="images/bonfire.jpg" loading="lazy" alt="Bonfire evenings">
       <div>Bonfire evenings under open skies</div>
     </div>
   </div>
@@ -208,46 +250,25 @@
 <section>
   <h2>Experiences Around AAGASA</h2>
   <p class="muted">
-    Thoughtfully simple experiences that guests love — no schedules,
-    no crowds, just nature within walking distance.
+    Thoughtfully simple experiences — no schedules, no crowds, just nature within walking distance.
   </p>
 
   <div class="grid">
-    <!-- Walk by the Lake -->
     <div class="card">
-      <img
-        src="images/lake-walk.jpg"
-        loading="lazy"
-        alt="Lake walk near AAGASA homestay"
-      >
+      <img src="images/lake-walk.jpg" loading="lazy" alt="Lake walk">
       <div>
         <strong>Walk by the Lake</strong>
-        A serene lake is just about 100 meters from the property —
-        ideal for morning walks, quiet reflection, and breathing fresh air.
+        A serene lake just about 100 meters away, ideal for morning walks and quiet reflection.
       </div>
     </div>
 
-    <!-- Sunset Evenings (Video) -->
     <div class="card">
-      <img
-        src="images/sunset.jpg"
-        loading="lazy"
-        alt="Sunset view near AAGASA homestay">
+      <img src="images/sunset.jpg" loading="lazy" alt="Sunset views">
       <div>
         <strong>Sunset Evenings</strong>
-        Calm, uninterrupted sunset views with open skies —
-        best enjoyed slowly with tea, conversations, and silence.
+        Calm, uninterrupted sunset views best enjoyed slowly with tea and conversation.
       </div>
     </div>
-  </div>
-</section>
-
-<section>
-  <h2>Gallery</h2>
-  <div class="grid">
-    <div class="card"><img src="images/gallery1.jpg" loading="lazy" alt="AAGASA property view"></div>
-    <div class="card"><img src="images/gallery2.jpg" loading="lazy" alt="Nature surroundings at AAGASA"></div>
-    <div class="card"><img src="images/gallery3.jpg" loading="lazy" alt="Outdoor spaces at AAGASA"></div>
   </div>
 </section>
 
@@ -269,6 +290,7 @@
   <p class="muted">
     For availability, dates, and booking confirmation, contact us directly on WhatsApp.
   </p>
+
   <a class="btn"
      href="https://wa.me/919008964945?text=Hi%20I%20want%20to%20check%20availability%20at%20AAGASA">
     Check Availability on WhatsApp
